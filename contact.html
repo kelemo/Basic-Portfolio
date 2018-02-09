@@ -1,65 +1,66 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en-us">
 
-<link href="css/contact.css" rel="stylesheet" type="text/css" />
-<title>contact</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Kadiro Elemo</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body style="background-image: url(darkness.png);">
+<body>
 
-   <div id="container">
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Kadiro Elemo</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <div id="header">
-    <h1> Kadiro Elemo</h1>
-</div>
-        <div id="nav">
-             <ul>
-                 <li><a class="selected" href="#">About</a></li> 
-                 <li><a href="#">Portfolio</a></li> 
-                 <li><a href="#">Contact</a></li>
-             </ul>
-        </div>
-        
-        <div id="main">
-             <h2>Contact</h2>
-            <br> <br> 
-            <hr> 
-            <br> <br>
-        <form action="/action_page.php">
-        Name:<br>
-        <input type="text" name="name" value="">
-        <br> <br> <br>
-        Email: <br>
-        <input type="text" email="email" value=""> <br> <br> <b></b>
-        Message: <br>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-       <textarea rows="4" cols="50"> </textarea>
-        <br><br> <br><br>
-        <input type="submit" value="Submit">
-        </form> 
-        </div>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-        <div id="sidebar">
-            
-            <h3>Connect Me</h3>
-            <br>
-            <hr> 
-            <br>
-            <br>
-    
+    </section>
 
-     <img src="images/github.png" alt="github logo" height="100" width="60">  
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-     <img src="images/linkdin.png" alt="linkdin logo" height="100" width="60"> 
+        <a href="https://github.com/kelemo"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/kadiro-elemo-a28376152/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackexchange.com/users/12173211/kadiro-elemo"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-     <img src="images/stack.png" alt="stackoverflow logo" height="100" width="60"> 
-
-
-   </div>
-   <div id="footer">
-       &copy; Copyright 2017 Kadiro Elemo
-   </div>
- </div>
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Kadiro Elemo
+    </div>
+  </footer>
 </body>
+
 </html>
